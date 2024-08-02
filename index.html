@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Year and Month Picker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="openPopupBtn">Select Year and Month</button>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="closePopupBtn" class="close">&times;</span>
+            <h2>Select Year and Month</h2>
+            <div class="selectors">
+                <div class="select-container">
+                    <div id="yearSelect" class="select-scroll">
+                        <!-- Year options will be generated dynamically -->
+                    </div>
+                </div>
+                <div class="select-container">
+                    <div id="monthSelect" class="select-scroll">
+                        <!-- Month options will be generated dynamically -->
+                    </div>
+                </div>
+            </div>
+            <button id="confirmBtn" disabled>Confirm</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
